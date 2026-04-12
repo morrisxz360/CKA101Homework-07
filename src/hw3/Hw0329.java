@@ -107,8 +107,9 @@ public class Hw0329 {
 			}
 			lot3[i] = g;
 			System.out.print(lot3[i] + " ");
+			
 		}
-		scn.close();
+		scn.close(); 
 	}
 	
 }

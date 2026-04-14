@@ -43,10 +43,10 @@ public class Hw0408 {
 	System.out.println(num2);
 	
 }
-	public static void main(String [] args) {
-		Hw0408 a = new Hw0408(); 
-		a.randAvg();
-	}
+//	public static void main(String [] args) {
+//		Hw0408 a = new Hw0408(); 
+//		a.randAvg();
+//	}
 
 //	3.利用Overloading,設計兩個方法int maxElement(int x[][])與double maxElement(double x[][]),
 //	可以找出二維陣列的最大值並回傳,如圖:
@@ -73,20 +73,20 @@ public class Hw0408 {
 		}
 		return max;
 	}
-	public static void main(String [] args) {
-		Hw0408 a = new Hw0408(); 
-		int[][] intArray = {
-			    {1, 6, 3},
-			    {9, 5, 2}
-			};
-
-			double[][] doubleArray = {
-			    {1.2, 3.5, 2.2},
-			    {7.4, 2.1, 8.2}
-			};
-			System.out.println(a.maxElement(intArray));
-			System.out.println(a.maxElement(doubleArray));
-	}
+//	public static void main(String [] args) {
+//		Hw0408 a = new Hw0408(); 
+//		int[][] intArray = {
+//			    {1, 6, 3},
+//			    {9, 5, 2}
+//			};
+//
+//			double[][] doubleArray = {
+//			    {1.2, 3.5, 2.2},
+//			    {7.4, 2.1, 8.2}
+//			};
+//			System.out.println(a.maxElement(intArray));
+//			System.out.println(a.maxElement(doubleArray));
+//	}
 }
 //	4.請設計一個類別MyRectangle:
 //	(1) 有兩個double型態的屬性為width, depth

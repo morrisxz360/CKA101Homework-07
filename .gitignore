@@ -1,0 +1,22 @@
+# Maven
+target/
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+
+
+*.class
+
+# log
+*.log
+logs/
+
+# macOS
+.DS_Store
+
+# 環境變數 / 機密
+.env

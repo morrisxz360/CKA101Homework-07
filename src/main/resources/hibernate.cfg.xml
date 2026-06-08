@@ -18,6 +18,6 @@
 		<mapping class="com.order.model.OrderListVO" />
 		<mapping class="com.order.model.RefundListVO" />
 		<mapping class="com.order.model.StayRecordVO" />
-		<mapping class="com.order.model.RoomInventory"/>
+		<mapping class="com.order.model.RoomInventoryVO"/>
 	</session-factory>
 </hibernate-configuration>

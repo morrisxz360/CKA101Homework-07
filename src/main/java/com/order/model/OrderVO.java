@@ -63,8 +63,9 @@ public class OrderVO {
 	private Byte paymentMethod;
 	
 	@CreationTimestamp 
-	@Column(name ="CREATED_TIME")
+	@Column(name = "CREATED_TIME", updatable = false)
 	private Timestamp createdTime;
+	
 	@UpdateTimestamp
 	@Column(name ="UPDATED_TIME")
 	private Timestamp updatedTime;

@@ -88,19 +88,23 @@ public class OrderHibernateDAO implements OrderDAO_interface {
 //		}finally {
 //			session.close();
 //		}
-		
-		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-		try {
-			session.beginTransaction();
-			session.merge(ordervo);
-			session.getTransaction().commit();
-			
-		}catch(Exception e) {
-			session.getTransaction().rollback();
-			throw e;
-		}
+//		===================================================
+		    Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+		    try {
+		        session.beginTransaction();
 
-	}
+		        OrderVO db = session.find(OrderVO.class, ordervo.getOrderId()); 
+
+		        db.setCheckInDate(ordervo.getCheckInDate());
+		        db.setCheckOutDate(ordervo.getCheckOutDate());
+		        db.setOrderStatus(ordervo.getOrderStatus());
+		        
+		        session.getTransaction().commit(); 
+		    } catch (Exception e) {
+		        session.getTransaction().rollback();
+		        throw e;
+		    }
+		}
 
 	@Override
 	public void delete(Integer orderId) {

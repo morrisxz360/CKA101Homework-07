@@ -5,6 +5,7 @@ import java.util.List;
 
 import com.order.dao.OrderDAO_interface;
 import com.order.dao.OrderHibernateDAO;
+import com.order.dao.OrderJDBCDAO;
 import com.order.model.OrderVO;
 
 public class OrderService {
@@ -12,7 +13,7 @@ public class OrderService {
 	private OrderDAO_interface dao;
 
 	public OrderService() {
-		dao = new OrderHibernateDAO();
+		dao = new OrderJDBCDAO();
 
 	}
 
